@@ -1,0 +1,98 @@
+/* ---- PROJET PLUS-PAGE ------*/
+#projetplus{
+  height: 100vh;
+  background-image: url('img/fond-a-propos.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+p{
+  height: 100px;
+}
+.projetplus-items{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 95%;
+}
+
+
+.projetplus-text{
+  position: relative;
+}
+
+.projetplus-text h2{
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.boutons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bouton-livret,
+.bouton-install
+{
+  width: 161px;
+  height: 34px;
+  flex-shrink: 0;
+  background-color: #FFDF84;
+  border-radius: 33px;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-livret a,
+.bouton-install a
+{
+  font-family: Lora;
+  color: #EA7F12;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.bouton-retour{
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: #F28C28;
+  border-radius: 33px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-retour a{
+  font-family: Lora;
+  color: #FEEFC4;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+
+}

@@ -1,0 +1,239 @@
+/* ---- A PROPOS-PAGE ------*/
+#apropos{
+  height: 100vh;
+  background-image: url('img/fond-a-propos.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.apropos-items{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 95%;
+}
+
+.apropos-participants-items{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 95%;
+}
+
+.apropos-partenaires-items{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 95%;
+}
+
+.apropos-text{
+  position: relative;
+}
+
+.apropos-text h2{
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.apropos-projet-text{
+  position: relative;
+  width: 259px;
+  height: 356px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apropos-projet-text p{
+  color: #000;
+text-align: justify;
+font-family: Lora;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.apropos-items img{
+  width: 139px;
+  height: 197px;
+  margin: 30px;
+  transform: rotate(-5.081deg);
+  flex-shrink: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
+}
+
+.participants{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.participants-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.manon h3,
+.nathalie h3,
+.delphine h3,
+.jeremy h3,
+.alice h3
+{
+  margin: 0;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.jeremy p{
+  width: 224px;
+  height: 67px;
+  padding-bottom: 10px;
+
+}
+
+.alice p{
+  width: 224px;
+height: 67px;
+}
+
+.manon,
+.nathalie,
+.delphine,
+.jeremy,
+.alice
+{
+  margin-bottom: 10px;
+}
+
+.delphine-img{
+  position: relative;
+  bottom: 10px;
+}
+
+.jeremy-img{
+  position: relative;
+  bottom: 30px;
+}
+
+.alice-img{
+  position: relative;
+  bottom: 30px;
+}
+
+.participants-text p{
+  color: #000;
+  font-family: Lora;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.participants-images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partenaires-logos img{
+  padding: 10px;
+}
+
+.partenaires-logos{
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boutons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bouton-projet,
+.bouton-participants,
+.bouton-partenaires
+{
+  width: 161px;
+  height: 34px;
+  flex-shrink: 0;
+  background-color: #FFDF84;
+  border-radius: 33px;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-projet a,
+.bouton-participants a,
+.bouton-partenaires a
+{
+  font-family: Lora;
+  color: #EA7F12;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.bouton-retour{
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: #F28C28;
+  border-radius: 33px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-retour a{
+  font-family: Lora;
+  color: #FEEFC4;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+
+}

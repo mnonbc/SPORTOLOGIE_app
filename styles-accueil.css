@@ -1,0 +1,103 @@
+/* ---- ACCUEIL ------*/
+
+#accueil{
+  height: 100vh;
+  background-image: url('img/accueil-fond-sansobj2.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.accueil-items{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accueil-items a{
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: -360px;
+  left: -200px;
+
+}
+
+.accueil-text{
+/*  width:174px;*/
+  position: absolute;
+  top: -200px;
+  left: -50px;
+}
+
+
+.tennis{
+  width: 191px;
+  height: 257px;
+  flex-shrink: 0;
+  border-radius: 95.5px;
+  position: absolute;
+  top: 500px;
+  left: 35px;
+}
+
+.eau{
+  width: 167px;
+  height: 154px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 231px;
+  left: 0px;
+}
+
+.capteurs{
+  width: 216px;
+  height: 250px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 445px;
+  left: 170px;
+}
+
+.basket{
+  width: 107px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 53.5px;
+  position: absolute;
+  top: 492px;
+  left: 219px;
+}
+
+.ondes{
+  width: 121px;
+  height: 147px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 49px;
+  left: 54px;
+}
+
+.regle{
+  width: 104px;
+  height: 122px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 51px;
+  left: 153px;
+}
+
+.rapporteur{
+  width: 96px;
+  height: 87px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 341px;
+  left: 223px;
+}

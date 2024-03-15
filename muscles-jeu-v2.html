@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-muscles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="script-muscles-jeu-v2.js" defer></script>
+
+
+    <title>Sportologie</title>
+
+  </head>
+  <body>
+    <div id="muscles">
+
+    <div class="page-transition">
+      <a href="accueil.html"><img src="img/retour-sac.png" alt="" class="retour-sac"></a>
+
+
+      <div class="container">
+
+      <div class="panneau" id="panneau1"></div>
+      <div class="panneau" id="panneau2"></div>
+      <div class="panneau" id="panneau3">
+        <div id="menu-texte">
+          <h1>Menu</h1>
+          <a href="a-propos.html">
+          <h2>A propos</h2>
+          </a>
+          <a href="projet-plus.html">
+          <h2>Le projet Sportologie</h2>
+          </a>
+          <a href="accueil.html">
+          <h2>Retour au sac à dos</h2>
+          </a>
+        </div>
+
+      </div>
+      <div id="menu" class="item">
+        <img src="img/menu-bouton3.png" alt="" width="50px">
+
+      </div>
+      <div class="muscles-items">
+        <a href="muscles-v2.html">
+        <img src="img/ondes.png" class="ondes" alt="" width="80px">
+        </a>
+        <div class="muscles-text not-user-selectable">
+          <h1>Fais fonctionner les <br>muscles de Sarah !</h1>
+          <p>Fais sauter Sarah dans son <br>parcours de saut de haies !</p>
+        </div>
+
+        <canvas id="board">
+
+        </canvas>
+
+        <div class="ressort-saut2 not-user-selectable" id="ressort2" >
+          <img src="img/muscles-ressort.png" alt="" class="ressort-img2" draggable="false">
+        </div>
+        <div id="messageBox" style="display: none;">
+          <p><span id="messageText"></span></p>
+          <div onclick="recommencer()">
+            <h1>Recommencer</h1>
+            <a href="muscles-3-v2.html">
+              <h2>En savoir plus</h2>
+            </a>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

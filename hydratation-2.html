@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-hydratation.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+
+
+    <title>Sportologie</title>
+
+  </head>
+  <body>
+    <script src="script-hydratation.js" defer></script>
+
+    <div id="hydratation">
+
+    <div class="page-transition">
+      <a href="accueil.html"><img src="img/retour-sac.png" alt="" class="retour-sac"></a>
+
+      <div class="container">
+
+      <div class="panneau" id="panneau1"></div>
+      <div class="panneau" id="panneau2"></div>
+      <div class="panneau" id="panneau3">
+        <div id="menu-texte">
+          <h1>Menu</h1>
+            <a href="a-propos.html">
+            <h2>A propos</h2>
+            </a>
+            <a href="projet-plus.html">
+            <h2>Le projet Sportologie</h2>
+            </a>
+            <a href="accueil.html">
+            <h2>Retour au sac à dos</h2>
+            </a>
+        </div>
+
+      </div>
+      <div id="menu" class="item">
+        <img src="img/menu-bouton3.png" alt="" width="40px">
+
+      </div>
+      <div class="hydratation-items">
+
+        <a href="eau.html">
+        <img src="img/eau.png" class="eau" alt="" width="80px">
+        </a>
+        <div class="hydratation-text">
+
+          <h1>Trouve la bonne<br>combinaison</h1>
+          <p>Choisis 1 boisson et jusqu'à 3 aliments <br> et rempli la jauge d'hydratation à 100% !</p>
+<!--
+          <div class="icone-clignotant" onclick="afficherDetails()">
+            <div class="fond-icone opacity-hidden"></div>
+            <div class="icone-texte" id="icone-texte">?</div>
+            <div class="clignotant" id="clignotant" style="display: none;"></div>
+          </div>
+
+            <div id="details-container" class="details-container">
+              <div class="details-text">
+                Aucun élément séléctionné.
+              </div>
+            </div> -->
+            <div class="jauge">
+              <div class="jauge-remplissage" style="width: 0;"></div>
+            <div class="pourcentage-remplissage">0%</div>
+            </div>
+
+            <div id="messageBox" style="display: none;">
+              <p><span id="messageText"></span></p>
+              <img src="img/reussite-hydratation.png" alt="" width="200px">
+              <div onclick="recommencer()">
+                <h1>Recommencer</h1>
+                <a href="hydratation-3.html">
+                  <h2>En savoir plus</h2>
+                </a>
+              </div>
+            </div>
+        </div>
+
+
+
+
+<div class="categories">
+  <div class="elementsHaut">
+
+
+    <div onclick="choisirElement('boisson', 0)">
+      <img src="img/hydratation-eau3.png" alt="" width="90px">
+    </div>
+    <div onclick="choisirElement('boisson', 1)">
+      <img src="img/hydratation-jus-orange3.png" alt="" width="90px">
+    </div>
+    <div onclick="choisirElement('boisson', 2)">
+      <img src="img/hydratation-coca3.png" alt="" width="90px">
+    </div>
+
+    <div onclick="choisirElement('fruit', 0)">
+    <img src="img/hydratation-pomme3.png" alt="" width="90px">
+  </div>
+    <div onclick="choisirElement('fruit', 1)">
+    <img src="img/hydratation-compote3.png" alt="" width="90px">
+    </div>
+
+  </div>
+
+
+  <div class="elementsBas">
+    <div onclick="choisirElement('laitier', 0)">
+    <img src="img/hydratation-yaourt3.png" alt="" width="90px">
+    </div>
+    <div onclick="choisirElement('laitier', 1)">
+      <img src="img/hydratation-lait3.png" alt="" width="90px">
+    </div>
+    <div onclick="choisirElement('laitier', 2)">
+      <img src="img/hydratation-choco-lait3.png" alt="" width="90px">
+    </div>
+
+    <div onclick="choisirElement('cerealier', 0)">
+      <img src="img/hydratation-pain-choco4.png" alt="" width="90px">
+    </div>
+    <div onclick="choisirElement('cerealier', 1)">
+      <img src="img/hydratation-petit-beurre3.png" alt="" width="90px">
+    </div>
+  </div>
+
+
+
+
+
+    <div class="categoriesHaut">
+
+    <div class="case">
+      <h2>Boisson</h2>
+      <div class="boisson"></div>
+  </div>
+
+    <div class="case">
+      <h2>Fruit</h2>
+      <div class="fruit"></div>
+    </div>
+  </div>
+
+  <div class="categoriesBas">
+
+    <div class="case">
+      <h2>Produit laitier</h2>
+      <div class="laitier"></div>
+    </div>
+
+    <div class="case">
+      <h2>Produit céréalier</h2>
+      <div class="cerealier"></div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>

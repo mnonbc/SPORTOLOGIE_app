@@ -1,0 +1,199 @@
+#sport{
+  height: 100vh;
+  background-image: url('img/fond-sport.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.sport-items{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 95%;
+}
+
+.sport-text{
+  position: relative;
+}
+
+.bouton-sport{
+  width: 121px;
+  height: 31px;
+  flex-shrink: 0;
+  background-color: #A02971;
+  border-radius: 33px;
+  position: relative;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bouton-sport a{
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.bouton-sport2{
+  width: 121px;
+  height: 31px;
+  background-color: #A02971;
+  border-radius: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton-sport2 a{
+  font-family: Lora;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+#question-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#question-container p{
+  width: 281px;
+  height: 76px;
+  flex-shrink: 0;
+  padding-bottom: 20px;
+}
+
+#question-text{
+  width: 244px;
+height: 76px;
+text-align: justify;
+flex-shrink: 0;
+padding: 30px;
+}
+
+#options {
+  list-style: none;
+  padding: 30px;
+}
+
+#options li {
+  margin-bottom: 5px;
+}
+
+.option-input {
+  display: none; /* Cachez les boutons radio par défaut */
+}
+
+.option-wrapper {
+  margin-bottom: 5px;
+}
+
+.option-wrapper label {
+  display: block;
+  width: 200px;
+  height: 20px;
+  flex-shrink: 0;
+  padding: 10px;
+  background-color: #FFF; /* Fond noir par défaut */
+  border-radius: 30px; /* Bords arrondis */
+  border: 2px solid #FFF; /* Couleur de survol lorsque la souris est dessus */
+  font-family: Lora;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Ajoutez une transition pour une animation en douceur */
+}
+
+.option-wrapper label:hover {
+  border: 2px solid #CCACDA; /* Couleur de survol lorsque la souris est dessus */
+}
+
+.option-wrapper input:checked + label {
+  background-color: #FFF; /* Fond blanc lorsque sélectionné */
+}
+
+button {
+  width: 121px;
+  height: 31px;
+  background-color: #FFF;
+  border-radius: 33px;
+  line-height: 31px; /* Assure le centrage vertical */
+  cursor: pointer;
+  position: relative;
+  border-width: 0;
+  top: 50px;
+}
+
+#valider {
+  display: none;
+  font-family: Lora;
+  color: #9F2971;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+button:hover{
+  background-color: #F2B9DB;
+}
+
+.resultat-container {
+  text-align: center; /* Alignement du texte au centre */
+  position: relative;
+  top: 10px;
+}
+
+
+.resultat-container p{
+  width: 271px;
+  height: auto;
+  list-style: none;
+  margin: 20px;
+  padding: 0px;
+  position: relative;
+  text-align: justify;
+}
+
+#resultat{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#retour-btn{
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

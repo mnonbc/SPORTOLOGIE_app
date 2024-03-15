@@ -1,0 +1,280 @@
+body {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  /*background-repeat: no-repeat;
+  background-origin: content-box;*/
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap')
+
+
+@font-face {
+    font-family: 'Lora';
+    src: url('font/Lora-Bold.ttf') format('ttf'),
+         url('font/Lora-BoldItalic.ttf') format('ttf'),
+         url('font/Lora-Italic.ttf') format('ttf'),
+         url('font/Lora-Medium.ttf') format('ttf'),
+         url('font/Lora-MediumItalic.ttf') format('ttf'),
+         url('font/Lora-Regular.ttf') format('ttf'),
+         url('font/Lora-SemiBold.ttf') format('ttf'),
+         url('font/Lora-SemiBoldItalic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+.not-user-selectable {
+	pointer-events:none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles spécifiques pour les appareils mobiles */
+    /* Par exemple, augmenter la taille des polices ou ajuster les marges/paddings */
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Appliquer l'animation aux éléments */
+.page-transition {
+  animation: fade 1.5s ease-in-out;
+  height: 100vh;
+}
+
+
+h1{
+  color: #000;
+  text-align: center;
+  font-family: 'Lora';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h2{
+  color: #000;
+  text-align: center;
+  font-family: 'Lora';
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h3{
+  color: #000;
+  text-align: center;
+  font-family: 'Lora';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+p{
+  width: 271px;
+  height: 59px;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: 'Lora';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  color: #000;
+  text-align: center;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+
+.container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#menu{
+  height: 10px;
+  width: 10px;
+  margin: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  z-index: 4;
+  cursor: pointer;
+
+  border-radius: 50%;
+
+  transition:border-radius .3s linear;
+  -moz-transition:border-radius .3s linear;
+  -webkit-transition:border-radius .3s linear;
+}
+
+
+#menu.fade{
+  border-radius: 0%;
+}
+
+
+.panneau{
+  position: absolute;
+  height: 100%;
+  margin: 0px;
+}
+
+#panneau1 {
+  z-index: 1;
+  width: 0px;
+  background-image: url('img/panneau1.png');
+
+
+  transition: width .3s linear;
+  -moz-transition:width .3s linear;
+  -webkit-transition:width .3s linear;
+}
+
+#panneau1.animation{
+  width:100%;
+}
+
+#panneau2 {
+  z-index: 2;
+  width: 0px;
+  background-image: url('img/panneau2.png');
+
+  transition: width .3s linear;
+  -moz-transition:width .3s linear;
+  -webkit-transition:width .3s linear;
+  transition-delay: .1s;
+
+}
+
+#panneau2.animation{
+  width:98%;
+}
+
+#panneau3 {
+  z-index: 3;
+  width: 0px;
+  background-image: url('img/panneau3.png');
+
+  transition: width .3s linear;
+  -moz-transition:width .3s linear;
+  -webkit-transition:width .3s linear;
+transition-delay: .3s;
+
+
+}
+
+#panneau3.animation{
+  width:96%;
+}
+
+#menu-texte {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  transition-delay: .3s;
+
+
+}
+
+#menu-texte.animation {
+    opacity: 100;
+}
+
+#menu-texte h1{
+  font-size: 30px;
+}
+
+#menu-texte h2{
+  font-size: 20px;
+}
+
+.retour-sac{
+  width: 120px;
+  flex-shrink: 0;
+  border-radius: 273px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+}
+
+
+
+
+
+
+
+
+/*#sport{
+  height: 100vh;
+  background-image: url('img/accueil-fond-sansobj2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.sport-items{
+  position: absolute;
+  top: 0%;
+  left: 45%;
+  transform: translate(-45%, 0%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}*/
+
+/*
+
+.sous_box:hover{
+  width: 600px;
+}
+#mesure{
+background: url(img/saut.png);
+}
+
+#sport{
+  src: url(img/sport.png);
+
+}
+
+#hydratation{
+  src: url(img/hydratation.png);
+}
+
+#item4{
+  src: url(img/item4.png);
+}
